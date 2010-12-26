@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='LuceneText'>
+  <inherits name='com.os.FnModule'/>
+  <entry-point class='gen.client.EntryPoint_LuceneText'/>
+  <set-configuration-property name='js_type' value='fulltext'/>
+  <set-configuration-property name='design_name' value='dtest'/>
+  <set-configuration-property name='name' value='idx_1'/>
+  <add-linker name='jsLinker' />
+  <add-linker name='cdbLinker' />
+</module>

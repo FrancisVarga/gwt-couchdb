@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='couchdb_js'>
+  <inherits name='com.google.gwt.core.Core'/>
+  <inherits name='com.os.couchdbjs.Couchdb_js'/>
+  <source path='client'/>
+  <define-linker name='jsLinker' class='com.os.couchdbjs.linker.JsScriptLinker' />
+  <define-linker name='cdbLinker' class='com.os.couchdbjs.linker.CouchDBLinker' />
+</module>

@@ -1,0 +1,5 @@
+# This Annotation processor will be run automatically by the compiler
+# in order to detect all of the places that the @EventListener annotation
+# is used.
+
+com.os.couchdbjs.processor.Processor

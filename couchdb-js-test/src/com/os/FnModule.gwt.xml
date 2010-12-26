@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 1.7.1//EN" "http://google-web-toolkit.googlecode.com/svn/tags/1.7.1/distro-source/core/src/gwt-module.dtd">
+<module>
+  <inherits name="com.os.couchdbjs.Couchdb_js" />
+  <entry-point class='com.os.client.FnModule'/>
+  <source path="client"/>
+  <!--  	
+  <define-configuration-property name="couchdb_host" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_port" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_name" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_admin" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_pass" is_multi_valued="false"/>
+  -->
+  <set-configuration-property name="couchdb_host" value="127.0.0.1"/>
+  <set-configuration-property name="couchdb_port" value="15984"/>
+  <set-configuration-property name="couchdb_name" value="animals"/>
+  <set-configuration-property name="couchdb_admin" value="viorel"/>
+  <set-configuration-property name="couchdb_pass" value="mememe"/>
+</module>

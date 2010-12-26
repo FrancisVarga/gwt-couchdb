@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='UpdateTest'>
+  <inherits name='com.os.FnModule'/>
+  <entry-point class='gen.client.EntryPoint_UpdateTest'/>
+  <set-configuration-property name='js_type' value='update'/>
+  <set-configuration-property name='design_name' value='dtest'/>
+  <set-configuration-property name='name' value='update_1'/>
+  <add-linker name='jsLinker' />
+  <add-linker name='cdbLinker' />
+</module>

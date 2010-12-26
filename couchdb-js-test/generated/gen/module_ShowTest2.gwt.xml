@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='ShowTest2'>
+  <inherits name='com.os.FnModule'/>
+  <entry-point class='gen.client.EntryPoint_ShowTest2'/>
+  <set-configuration-property name='js_type' value='show'/>
+  <set-configuration-property name='design_name' value='dtest'/>
+  <set-configuration-property name='name' value='show_2'/>
+  <add-linker name='jsLinker' />
+  <add-linker name='cdbLinker' />
+</module>

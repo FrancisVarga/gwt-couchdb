@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='couchdb_test'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.os.couchdb.Couchdb'/>
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.os.couchdb.test.client.Couchdb_test'/>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+
+  <define-configuration-property name="couchdb_host" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_port" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_name" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_admin" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_pass" is_multi_valued="false"/>
+
+  <set-configuration-property name="couchdb_host" value="127.0.0.1"/>
+  <set-configuration-property name="couchdb_port" value="15984"/>
+  <set-configuration-property name="couchdb_name" value="animals"/>
+  <set-configuration-property name="couchdb_admin" value="viorel"/>
+  <set-configuration-property name="couchdb_pass" value="mememe"/>
+
+  <add-linker name="couchDBLinker" />
+</module>

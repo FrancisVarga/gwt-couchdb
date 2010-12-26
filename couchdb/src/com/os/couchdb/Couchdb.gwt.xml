@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='couchdb'>
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.json.JSON'/>
+  <inherits name="com.google.gwt.http.HTTP" />
+  <inherits name="com.google.gwt.xml.XML" />
+  <inherits name="com.google.gwt.gears.Gears" />
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <inherits name='com.google.gwt.user.theme.standard.Standard'/>
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+
+  <!-- Specify the app entry point class.                         -->
+  <!--  
+  <entry-point class='com.os.couchdb.client.Couchdb'/>
+  -->
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='share'/>
+  <!--  
+  <define-configuration-property name="couchdb_host" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_port" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_name" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_admin" is_multi_valued="false"/>
+  <define-configuration-property name="couchdb_pass" is_multi_valued="false"/>
+
+  <set-configuration-property name="couchdb_host" value="127.0.0.1"/>
+  <set-configuration-property name="couchdb_port" value="15984"/>
+  <set-configuration-property name="couchdb_name" value="mydb"/>
+  <set-configuration-property name="couchdb_admin" value="myname"/>
+  <set-configuration-property name="couchdb_pass" value="xxxx"/>
+  -->
+  <define-linker name="couchDBLinker" class="com.os.couchdb.linker.CouchDBLinker" />
+  <!--  
+  <add-linker name="couchDBLinker" />
+  -->
+</module>
+	
